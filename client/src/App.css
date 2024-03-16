@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+  justify-content: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+.show-products-nav {
+     font-size: large;
+     font-family: 'Times New Roman', Times, serif;
+     font-weight: 600;
+     color: #61dafb;
+}
+
+.add-products-nav {
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 200;
+}
+
+.show {
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  color: #bb1d1d;
+  text-align: center;
+  justify-content: center;
+}
+
+.products-card-info {
+  display: flex;
+  flex-direction: row;
+  margin: 2px;
+  padding: 2px;
+}
+
+@media (max-width: 800px) {
+  .products-card-info {
+    flex-direction: column;
+  } 
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: calc(25% - 10px);
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.Single-product-info{
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 400;
+  color: #282c34;
+  text-decoration: #282c34;
+  margin: 5px;
+  padding: 2px;
+
+
+}
+
+/* Assuming the following structure for HeroContainer and HeroBg */
+.HeroContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.HeroBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Adjust the video size and styles as needed */
+.videoBg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the video covers the entire container */
+  z-index: -1; /* This places the video behind other content */
+}
